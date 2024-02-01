@@ -1,10 +1,14 @@
-*{
+* {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
 
-:root{
+body {
+  font-family: 'open sans', 'sans serif';
+}
+
+:root {
   --bg-text-lightblue: #0282f9;
   --bg-main-black: #1c1c1c;
   --nav-text-grey: #4f4f4f;
@@ -12,3 +16,17 @@
   --footer-text-grey: #83867e;
   --bg-socials: #303030;
 }
+
+.container {
+  width: 80%;
+  max-width: 1176px;
+  margin: auto;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
