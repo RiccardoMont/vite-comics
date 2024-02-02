@@ -14,11 +14,16 @@ export default {
 </script>
 
 <template>
+    
     <AppHeader></AppHeader>
     <AppMain></AppMain>
     <AppFooter></AppFooter>
+
 </template>
 
 <style>
+.relative{
+    position: relative;
+}
 
 </style>

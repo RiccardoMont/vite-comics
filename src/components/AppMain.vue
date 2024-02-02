@@ -14,31 +14,27 @@ export default {
     <div class="comicsLocations">
         <div class="container">
             <div class="row">
-                <div class="singleIcon">
+                <a class="singleIcon" href="#">
                     <img class="resizeIcon" src="/buy-comics-digital-comics.png" alt="">
                     <span>DIGITAL COMICS</span>
-                </div>
-                <div class="singleIcon">
+                </a>
+                <a class="singleIcon" href="#">
                     <img class="resizeIcon" src="/buy-comics-merchandise.png" alt="">
                     <span>DC MERCHANDISE</span>
-                </div>
-                <div class="singleIcon">
+                </a>
+                <a class="singleIcon" href="#">
                     <img class="resizeIcon" src="/buy-comics-subscriptions.png" alt="">
                     <span>SUBSCRIPTION</span>
-                </div>
-
-                <div class="singleIcon">
+                </a>
+                <a class="singleIcon" href="#">
                     <img class="resizeIcon" src="/buy-comics-shop-locator.png" alt="">
                     <span>COMIC SHOP LOCATOR</span>
-                </div>
-                <div class="singleIcon">
+                </a>
+                <a class="singleIcon" href="#">
                     <img class="resizeIcon" src="/buy-dc-power-visa.svg" alt="">
                     <span class="alfa">DC POWER VISA</span>
-                </div>
-
-
+                </a>
             </div>
-
         </div>
     </div>
 </template>
@@ -53,10 +49,13 @@ export default {
 }
 
 .comicsLocations {
-    height: 150px;
+    height: 18vh;
+    width: 100vw;
     background-color: var(--bg-text-lightblue);
     display: flex;
     align-items: center;
+
+
 }
 
 .row {
@@ -68,6 +67,7 @@ export default {
     display: flex;
     align-items: center;
     justify-content: start;
+    text-decoration: none;
 
     & span {
         color: var(--main-footer-titles-white);
@@ -80,5 +80,4 @@ export default {
     max-width: 65px;
     max-height: 65px;
 }
-
 </style>
