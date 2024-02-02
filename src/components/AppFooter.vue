@@ -9,7 +9,7 @@ export default {
             <div class="row">
                 <div class="links">
                     <div class="col-4">
-                        <h4>DC COMICS</h4>
+                        <h5>DC COMICS</h5>
                         <ul>
                             <li><a href="#">Characters</a></li>
                             <li><a href="#">Comics</a></li>
@@ -19,14 +19,14 @@ export default {
                             <li><a href="#">Videos</a></li>
                             <li><a href="#">News</a></li>
                         </ul>
-                        <h4>SHOP</h4>
+                        <h5>SHOP</h5>
                         <ul>
                             <li><a href="#">Shop DC</a></li>
                             <li><a href="#">Shop DC Collectibles</a></li>
                         </ul>
                     </div>
                     <div class="col-4">
-                        <h4>DC</h4>
+                        <h5>DC</h5>
                         <ul>
                             <li><a href="#">Terms of Use</a></li>
                             <li><a href="#">Privacy policy (New)</a></li>
@@ -42,7 +42,7 @@ export default {
                         </ul>
                     </div>
                     <div class="col-4">
-                        <h4>SITES</h4>
+                        <h5>SITES</h5>
                         <ul>
                             <li><a href="#">DC</a></li>
                             <li><a href="#">MAD Magazine</a></li>
@@ -51,27 +51,45 @@ export default {
                             <li><a href="#">DC Power Visa</a></li>
                         </ul>
                     </div>
-
                 </div>
-                <div class="mark">
+                <div class="imgDiv">
                     <img class="resizeLogo" src="/dc-logo-bg.png" alt="">
+                </div>
+
+                <!--<div class="mark">
+                    <img class="resizeLogo" src="/dc-logo-bg.png" alt="">
+                </div>-->
+
+            </div>
+        </div>
+    </div>
+    <div class="signSocial">
+        <div class="container">
+            <div class="row">
+                <button>SIGN-UP NOW!</button>
+                <div class="socials">
+                    <h3>FOLLOW US</h3>
+                    <a href=""><img src="/footer-facebook.png" alt=""></a>
+                    <a href=""><img src="/footer-twitter.png" alt=""></a>
+                    <a href=""><img src="/footer-youtube.png" alt=""></a>
+                    <a href=""><img src="/footer-pinterest.png" alt=""></a>
+                    <a href=""><img src="/footer-periscope.png" alt=""></a>
                 </div>
             </div>
         </div>
     </div>
-    <div class="socials">
-    </div>
 </template>
 <style scoped>
+.row {
+    flex-wrap: nowrap;
+}
+
+
 .categories {
     background-image: url('/footer-bg.jpg');
     background-repeat: no-repeat;
     background-size: 100%;
     width: 100vw;
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    z-index: -1;
 
 
     & ul {
@@ -79,44 +97,86 @@ export default {
     }
 }
 
+
+
 .links {
     display: flex;
     margin-left: -1rem;
 
-    & ul {
-        padding-bottom: 5px;
+
+    & li {
+        line-height: 1;
+
     }
 
-    & h4 {
+    & h5 {
         color: var(--main-footer-titles-white);
         padding-bottom: 5px;
+        padding-top: 10px;
     }
 
     & a {
         text-decoration: none;
         color: var(--footer-text-grey);
-        font-size: 12px;
+        font-size: 10px;
     }
 
 
     & .col-4 {
         width: calc((100%/12)*4);
-        padding-left: 1rem;
+        padding-left: 10px;
         padding-right: 1rem;
     }
 }
 
-.socials {
-    height: 10vh;
-    width: 100vw;
-    background-color: var(--bg-socials);
-    position: absolute;
-    bottom: 0px;
-    left: 0px;
-    z-index: 5;
+.imgDiv{
+    position: relative;
+    margin-bottom: -74px;
+    margin-top: -80px;
+    display: flex;
+    justify-content: end;
 }
 
+.signSocial {
+    background-color: var(--bg-socials);
+    height: 10vh;
+    min-height: 60px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    position: relative;
+    z-index: 2;
+
+    & .row {
+
+        margin-left: -10px;
+    }
+
+    & button {
+        background-color: var(--bg-socials);
+        color: var(--main-footer-titles-white);
+        padding: 10px;
+        border: 2px solid var(--bg-text-lightblue);
+        font-weight: 600;
+        min-width: 100px;
+        cursor: pointer;
+    }
+
+    .socials {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        min-width: 120px;
+
+        & h3 {
+            color: var(--bg-text-lightblue);
+        }
+
+    }
+}
+
+
 .resizeLogo {
-    height: 60vh;
+    width: 85%;
 }
 </style>

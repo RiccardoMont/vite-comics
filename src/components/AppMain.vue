@@ -54,6 +54,8 @@ export default {
     background-color: var(--bg-text-lightblue);
     display: flex;
     align-items: center;
+    position: relative;
+    z-index: 2;
 
 
 }

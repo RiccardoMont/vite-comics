@@ -7,9 +7,9 @@ export default {
     <header>
         <div class="container">
             <div class="row">
-                <div>
-                    <img src="/dc-logo.png" alt="">
-                </div>
+                <a href="#">
+                    <img class="resizeIcon" src="/dc-logo.png" alt="">
+                </a>
                 <ul>
                     <li><a href="">CHARACTERS</a></li>
                     <li><a href="">COMICS</a></li>
@@ -28,16 +28,22 @@ export default {
 </template>
 <style scoped>
 .row {
-    padding: 0.5rem;
+    padding-top: 0.5rem;
 }
+
+.resizeIcon{
+    width: 100px;
+}
+
 
 ul {
     display: flex;
     list-style: none;
 
     li {
-        padding: 0.5rem;
-        margin-bottom: -2rem;
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+        margin-bottom: -40px;
     }
 
     li::after {
@@ -46,7 +52,7 @@ ul {
         border-bottom: solid 5px var(--bg-text-lightblue);
         transition: all 0s ease-in-out 0s;
         transform: scaleX(0);
-        padding-bottom: 2rem;
+        padding-bottom: 40px;
 
     }
 
