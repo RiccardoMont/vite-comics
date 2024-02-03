@@ -5,25 +5,22 @@ import AppFooter from './components/AppFooter.vue';
 
 export default {
     name: 'App',
-    components:{
-    AppHeader,
-    AppMain,
-    AppFooter
+    components: {
+        AppHeader,
+        AppMain,
+        AppFooter
     }
 }
 </script>
 
 <template>
-    
     <AppHeader></AppHeader>
     <AppMain></AppMain>
     <AppFooter></AppFooter>
-
 </template>
 
 <style>
-.relative{
+.relative {
     position: relative;
 }
-
 </style>
