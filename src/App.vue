@@ -20,7 +20,7 @@ export default {
 </template>
 
 <style>
-.relative {
-    position: relative;
+body {
+    overflow-x: hidden;
 }
 </style>
